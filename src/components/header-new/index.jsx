@@ -15,7 +15,7 @@ import MenuItem from '@mui/material/MenuItem';
 
 const styles = {
     appLogo: {
-        height: 104,
+        height: 85,
     }
 }
 
@@ -26,11 +26,9 @@ function HeaderNew() {
 
     return (
         <BrowserRouter>
-
-
             <AppBar position="sticky" style={{ background: '#000', pt: 0, m: 0 }} className={"header-section"}>
                 <Toolbar sx={{ p: 0, m: 0 }} className={"toolbar"}>
-                        <Box sx={{ width: '11%' }}>
+                        <Box sx={{ width: '12%' }}>
                             <Link to={'/'}>
                                 <Box component={'img'} sx={styles.appLogo} src="logo.png" />
                             </Link>
@@ -40,7 +38,7 @@ function HeaderNew() {
                             <Grid item xs={12} className={"search-section"}>
                                 <Box sx={{ width: '100%' }}>
                                     <Box sx={{ ml: 15 }}>
-                                        <FormControl fullWidth sx={{ m: 1, width: '57%', height: '27px' }}>
+                                        <FormControl fullWidth sx={{ m: 1, width: '56%', height: '27px' }}>
                                             <OutlinedInput
                                                 id="outlined-adornment-amount"
                                                 startAdornment={<InputAdornment position="start"><SearchIcon
@@ -61,7 +59,7 @@ function HeaderNew() {
                         <Box sx={{
                             width: '11%', alignItems: 'center',
                             flexDirection: 'column'
-                        }} display="flex">
+                        }} display="flex" className={"header-right"}>
                             <Box display={"flex"}>
                                 <Button className={"primary-button upload-btn"} sx={{
                                     padding: "2px 23px 2px 23px;", bgcolor: "#fff", color: "#000", ":hover": {
